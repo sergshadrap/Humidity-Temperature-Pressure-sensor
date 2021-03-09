@@ -7,3 +7,9 @@ C1,C2 - capacitors for sensors stable feeding (100nf). R4,R6 - is a pull up I2C 
 Both Unconnected slave address: 1000000(40H)  short R3 to GND: slave address: 1000000(40H) short R2 to VCC: slave address: 1000001(41H)
 
 R1 - is optional select address for DPS368 (100K) empty(default) - the address 77h , 100K - 76h 
+
+With Arduino:
+Put ShadrapEsensor.cpp and ShadrapEsensor.h into ..Documents\Arduino\libraries\ShadrapEsensor\ 
+add a string #include <ShadrapEsensor.h> in your sketch. Add definition MyEsensor Airsensor;
+Start with  Airsensor.begin(Wire);  and enjoy.
+
